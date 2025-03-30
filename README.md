@@ -46,7 +46,11 @@ To run the project locally, follow these steps:
 Suggestions and improvements are always welcome!
 
 ## License
-This project is open-source and available under the **MIT License**.
+This project is open-source and available under the **MIT License**. So feel free to clone it and make your on portfolio.
+
+## Design Credits
+
+Jhanvi Shah :- https://www.figma.com/@jhanvishah
 
 ---
 *Feel free to connect with me for collaborations or feedback!* 🚀
