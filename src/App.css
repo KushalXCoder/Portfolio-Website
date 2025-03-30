@@ -54,7 +54,7 @@
 }
 
 .new-outline {
-    color: transparent;
+    color: rgba(10,10,10,0.1);
     -webkit-text-stroke: 1px black;
     font-weight: 700;
     text-shadow: 0px 0px 1px rgba(255, 255, 255, 1);
