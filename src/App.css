@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+    --font-display: "Sora", sans-serif;
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: white; /* White cursor */
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference; /* Inverts colors */
+    transition: transform 0.05s ease-out;
+    z-index: 100; /* Ensures it's always on top */
+}
+
+.nav-links::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s ease;
+}
+
+.nav-links:hover::after {
+    width: 100%;
+}
+
+.name::after {
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: blink 1.5s ease infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.new-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    font-weight: 700;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 1);
+}
+
+::selection {
+    background-color: yellow;
+}
