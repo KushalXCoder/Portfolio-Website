@@ -15,10 +15,22 @@ const ContactMe = () => {
 
   return (
     <section className='contact-me-container w-full'>
-        <div className="flex flex-col px-28 w-full font-display items-center mb-10">
-            <motion.h1 initial={{y: -50, opacity: 0}} whileInView={{y: 0, opacity: 1, transition: {duration: 1}}} viewport={{once: true, amount: 0.5}} className='text-4xl my-15'>Contact <span className='font-bold bg-yellow-300 px-2 rounded-md'>Me</span></motion.h1>
-            <div className="bottom-content flex justify-between items-center">
-                <motion.div initial={{x: -100, opacity: 0}} whileInView={{x: 0, opacity: 1, transition: {duration: 1}}} viewport={{once: true, amount: 0.3}} className="contact-me-form w-[40%]">
+        <div className="flex flex-col px-28 w-full font-display items-center mb-10 max-sm:px-5">
+            <motion.h1
+                initial={{y: -50, opacity: 0}}
+                whileInView={{y: 0, opacity: 1, transition: {duration: 1}}}
+                viewport={{once: true, amount: 0.5}}
+                className='text-4xl my-15 max-sm:my-10'
+            >
+                Contact <span className='font-bold bg-yellow-300 px-2 rounded-md'>Me</span>
+            </motion.h1>
+            <div className="bottom-content flex justify-between items-center max-sm:flex-col">
+                <motion.div
+                    initial={{x: -100, opacity: 0}}
+                    whileInView={{x: 0, opacity: 1, transition: {duration: 1}}}
+                    viewport={{once: true, amount: 0.3}}
+                    className="contact-me-form lg:w-[40%] max-sm:w-full"
+                >
                     <form className='flex flex-col gap-5'>
                         <div className="your-name">
                             <input type="text" placeholder='Your name' className='h-12 w-full border-2 rounded-md px-5'/>
@@ -36,7 +48,7 @@ const ContactMe = () => {
                             <button className='w-1/2 bg-black py-3 rounded-md text-white cursor-pointer'>Get in Touch</button>
                             <div className="connect-boxes flex w-1/2 justify-evenly">
                                 {connect.map((item,index) => (
-                                    <motion.div key={index} className="box h-15 w-15 border flex justify-center items-center rounded-md cursor-pointer" whileHover={{scale: 1.05, borderWidth: "3px"}}>
+                                    <motion.div key={index} className="box h-15 w-15 border flex justify-center items-center rounded-md cursor-pointer max-sm:h-12 max-sm:w-12" whileHover={{scale: 1.05, borderWidth: "3px"}}>
                                         <a href={item.path} target='_blank'><img src={item.src} alt={item.name} className='h-8'/></a>
                                     </motion.div>
                                 ))}
@@ -44,13 +56,18 @@ const ContactMe = () => {
                         </div>
                     </form>
                 </motion.div>
-                <motion.div initial={{x: 100, opacity: 0}} whileInView={{x: 0, opacity: 1, transition: {duration: 1}}} viewport={{once: true, amount: 0.3}} className="contact-me-info w-1/2 flex flex-col items-center">
+                <motion.div
+                    initial={{x: 100, opacity: 0}}
+                    whileInView={{x: 0, opacity: 1, transition: {duration: 1}}}
+                    viewport={{once: true, amount: 0.3}}
+                    className="contact-me-info lg:w-1/2 flex flex-col items-center max-sm:w-full max-sm:mt-10"
+                >
                     <div className="headings w-full flex flex-col gap-1">
-                        <h1 className='text-6xl font-bold'>Let's <span className='new-outline'>talk</span> for</h1>
-                        <h1 className='text-6xl font-bold'>Something special</h1>
+                        <h1 className='text-6xl font-bold max-sm:text-4xl'>Let's <span className='new-outline'>talk</span> for</h1>
+                        <h1 className='text-6xl font-bold max-sm:text-4xl'>Something special</h1>
                     </div>
-                    <p className='text-lg text-gray-500 mt-8'>I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
-                    <div className="other-contact-details w-full text-xl font-bold mt-8 flex flex-col gap-2">
+                    <p className='text-lg text-gray-500 mt-8 max-sm:mt-5'>I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
+                    <div className="other-contact-details w-full text-xl font-bold mt-8 flex flex-col gap-2 max-sm:mt-5">
                         <div className="my-email flex gap-3 items-center">
                             <img src={Gmail} alt="Gmail Image" className='h-5'/>
                             <h1>kushalrathod044@gmail.com</h1>
