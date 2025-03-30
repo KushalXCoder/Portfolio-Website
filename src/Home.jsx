@@ -8,9 +8,9 @@ import { motion } from "motion/react";
 const Home = () => {
 
   const connect = [
-    {name: "LinkedIn", src: Linkedin},
+    {name: "LinkedIn", src: Linkedin, path: "https://www.linkedin.com/in/kushal-rathod-90b800297/"},
     {name: "Gmail", src: Gmail},
-    {name: "GitHub", src: GitHub}
+    {name: "GitHub", src: GitHub, path: "https://github.com/KushalXCoder"}
   ];
 
   return (
@@ -25,9 +25,9 @@ const Home = () => {
                 <motion.p initial={{y: 100, opacity: 0}} animate={{y: 0, opacity: 1, transition: {duration: 1}}} className='mt-8 text-gray-700'>Passionate about technology, I specialize in Full Stack Web Development with a strong interest in integrating Generative AI into web applications. I enjoy collaborating with friends and teams to build innovative solutions. Committed to continuous learning, I aim to grow as a developer and contribute to impactful projects in the tech industry.</motion.p>
                 <motion.ul initial={{y: 50, opacity: 0}} animate={{y: 0, opacity: 1, transition: {duration: 1, delay: 0.5}}} className='connect-with-me flex gap-5 mt-14'>
                     {connect.map((item,index) => (
-                        <div key={index} className="box h-15 w-15 border flex justify-center items-center rounded-md cursor-pointer">
-                            <img src={item.src} alt={item.name} className='h-8'/>  
-                        </div>
+                        <motion.div key={index} className="box h-15 w-15 border flex justify-center items-center rounded-md cursor-pointer" whileHover={{scale: 1.05, borderWidth: "3px"}}>
+                            <a href={item.path} target='_blank'><img src={item.src} alt={item.name} className='h-8'/></a>
+                        </motion.div>
                     ))}
                 </motion.ul>
             </div>

@@ -8,9 +8,9 @@ import { motion } from "motion/react";
 const ContactMe = () => {
 
   const connect = [
-    {name: "LinkedIn", src: Linkedin},
+    {name: "LinkedIn", src: Linkedin, path: "https://www.linkedin.com/in/kushal-rathod-90b800297/"},
     {name: "Gmail", src: Gmail},
-    {name: "GitHub", src: GitHub}
+    {name: "GitHub", src: GitHub, path: "https://github.com/KushalXCoder"}
   ];  
 
   return (
@@ -36,9 +36,9 @@ const ContactMe = () => {
                             <button className='w-1/2 bg-black py-3 rounded-md text-white cursor-pointer'>Get in Touch</button>
                             <div className="connect-boxes flex w-1/2 justify-evenly">
                                 {connect.map((item,index) => (
-                                    <div key={index} className="box h-15 w-15 border-2 flex justify-center items-center rounded-md cursor-pointer">
-                                        <img src={item.src} alt={item.name} className='h-8'/>  
-                                    </div>
+                                    <motion.div key={index} className="box h-15 w-15 border flex justify-center items-center rounded-md cursor-pointer" whileHover={{scale: 1.05, borderWidth: "3px"}}>
+                                        <a href={item.path} target='_blank'><img src={item.src} alt={item.name} className='h-8'/></a>
+                                    </motion.div>
                                 ))}
                             </div>
                         </div>
