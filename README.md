@@ -42,9 +42,6 @@ To run the project locally, follow these steps:
 
 5. Open your browser and visit `http://localhost:5173` (or the port shown in the terminal).
 
-## Contributing
-Suggestions and improvements are always welcome!
-
 ## License
 This project is open-source and available under the **MIT License**. So feel free to clone it and make your on portfolio.
 
@@ -53,4 +50,4 @@ This project is open-source and available under the **MIT License**. So feel fre
 Jhanvi Shah :- https://www.figma.com/@jhanvishah
 
 ---
-*Feel free to connect with me for collaborations or feedback!* 🚀
+*Suggestions and improvements are always welcome! Feel free to connect with me for collaborations or feedback!* 🚀
