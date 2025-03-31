@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Download from "/Download.png";
 import Menu from "/menu.png";
+import Cross from "/Cross.png";
 import { AnimatePresence, motion, useScroll } from "motion/react";
 
 const Navbar = () => {
@@ -55,7 +56,10 @@ const Navbar = () => {
       </motion.nav>
       <AnimatePresence>
         {isMenuOpen && (
-          <motion.div initial={{y: -200, opacity: 0}} animate={{y: 0, opacity: 1, transition: {duration: 1}}} exit={{y: -200, opacity: 0, transition: {duration: 0.5}}} className="nav-options flex flex-col justify-center items-center h-full w-full gap-8">
+          <motion.div initial={{y: -200, opacity: 0}} animate={{y: 0, opacity: 1, transition: {duration: 1}}} exit={{y: -200, opacity: 0, transition: {duration: 0.5}}} className="nav-options flex flex-col justify-center items-center h-full w-full gap-8 fixed bg-white z-100">
+            <div className="cross absolute top-5 right-5">
+              <img src={Cross} alt="Cross Image" className='h-6' onClick={() => setMenuOpen(false)}/>
+            </div>
             <ul className="nav-options flex flex-col gap-8">
               {navLinks.map((item, index) => (
                 <motion.li key={index} className='font-display font-medium text-lg cursor-pointer relative' whileHover={{scale: 1.08}}>

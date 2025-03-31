@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="app h-screen w-screen relative overflow-x-hidden">
-      <motion.div className="cursor fixed top-0 left-0 h-10 w-10 bg-black rounded-full z-100 pointer-events-none" variants={variants} animate="default"></motion.div>
+      <motion.div className="cursor fixed top-0 left-0 h-10 w-10 bg-black rounded-full z-100 pointer-events-none max-sm:hidden" variants={variants} animate="default"></motion.div>
       {/* <div className="notice absolute font-display top-91 right-[-270px] text-white bg-blue-500 px-4 py-2 rounded-md rotate-90">Responsiveness work still going on. Please view on bigger screens 😄</div> */}
       <Navbar/>
       <Home/>
