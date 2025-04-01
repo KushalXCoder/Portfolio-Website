@@ -9,8 +9,8 @@ const Navbar = () => {
   const navLinks = [
     {name: "About", path: "about"},
     {name: "Skills", path: "skills"},
-    {name: "Projects", path: ""},
-    {name: "Contact", path: ""}
+    {name: "Projects", path: "projects"},
+    {name: "Contact", path: "contact"}
   ]
 
   const [hovered, setHovered] = useState(false);

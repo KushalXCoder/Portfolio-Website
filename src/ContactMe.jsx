@@ -14,7 +14,7 @@ const ContactMe = () => {
   ];  
 
   return (
-    <section className='contact-me-container w-full'>
+    <section id='contact' className='contact-me-container w-full'>
         <div className="flex flex-col px-28 w-full font-display items-center mb-10 max-sm:px-5">
             <motion.h1
                 initial={{y: -50, opacity: 0}}

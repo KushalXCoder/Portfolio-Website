@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 const AboutMe = () => {
   return (
-    <section className='aboutme-container w-full'>
+    <section id='about' className='aboutme-container w-full'>
         <div className="flex w-full px-28 font-display mt-15 mb-10 max-sm:mt-10 max-sm:px-5">
             <div className="bottom-content w-full flex max-sm:flex-col">
                 <motion.div
