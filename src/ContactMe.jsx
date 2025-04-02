@@ -15,7 +15,7 @@ const ContactMe = () => {
 
   return (
     <section id='contact' className='contact-me-container w-full'>
-        <div className="flex flex-col px-28 w-full font-display items-center mb-10 max-sm:px-5">
+        <div className="flex flex-col px-28 w-full font-display items-center mb-10 max-sm:px-5 max-lg:px-15">
             <motion.h1
                 initial={{y: -50, opacity: 0}}
                 whileInView={{y: 0, opacity: 1, transition: {duration: 1}}}
@@ -24,12 +24,12 @@ const ContactMe = () => {
             >
                 Contact <span className='font-bold bg-yellow-300 px-2 rounded-md'>Me</span>
             </motion.h1>
-            <div className="bottom-content flex justify-between items-center max-sm:flex-col">
+            <div className="bottom-content flex justify-between items-center max-sm:flex-col max-lg:flex-col">
                 <motion.div
                     initial={{x: -100, opacity: 0}}
                     whileInView={{x: 0, opacity: 1, transition: {duration: 1}}}
                     viewport={{once: true, amount: 0.3}}
-                    className="contact-me-form lg:w-[40%] max-sm:w-full"
+                    className="contact-me-form lg:w-[40%] max-sm:w-full max-lg:w-full"
                 >
                     <form className='flex flex-col gap-5'>
                         <div className="your-name">
@@ -60,7 +60,7 @@ const ContactMe = () => {
                     initial={{x: 100, opacity: 0}}
                     whileInView={{x: 0, opacity: 1, transition: {duration: 1}}}
                     viewport={{once: true, amount: 0.3}}
-                    className="contact-me-info lg:w-1/2 flex flex-col items-center max-sm:w-full max-sm:mt-10"
+                    className="contact-me-info lg:w-1/2 flex flex-col items-center max-sm:w-full max-sm:mt-10 max-lg:w-full max-lg:mt-10"
                 >
                     <div className="headings w-full flex flex-col gap-1">
                         <h1 className='text-6xl font-bold max-sm:text-4xl'>Let's <span className='new-outline'>talk</span> for</h1>

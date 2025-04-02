@@ -14,7 +14,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className='section-container w-full bg-black py-20 max-sm:py-12'>
+    <section className='section-container w-full bg-black py-20 max-sm:py-12 max-lg:py-15'>
         <div className="flex flex-col w-full items-center font-display">
             <motion.h1 initial={{y: -50, opacity: 0}} whileInView={{y: 0, opacity: 1, transition: {duration: 1}}} viewport={{once: true, amount: 0.5}} className='text-white text-4xl mb-10'>My <span className='bg-yellow-300 rounded-md px-2 font-bold'>Experience</span></motion.h1>
             <div className="experience-boxes w-full flex flex-col items-center gap-15 mt-5 max-sm:px-5">

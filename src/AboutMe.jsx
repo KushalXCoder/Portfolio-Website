@@ -7,17 +7,17 @@ import { motion } from "motion/react";
 const AboutMe = () => {
   return (
     <section id='about' className='aboutme-container w-full'>
-        <div className="flex w-full px-28 font-display mt-15 mb-10 max-sm:mt-10 max-sm:px-5">
-            <div className="bottom-content w-full flex max-sm:flex-col">
+        <div className="flex w-full px-28 font-display mt-15 mb-10 max-sm:mt-10 max-sm:px-5 max-lg:px-15">
+            <div className="bottom-content w-full flex max-sm:flex-col max-lg:flex-col">
                 <motion.div
                     initial={{x: -100, opacity: 0}}
                     whileInView={{x: 0, opacity: 1, transition: {duration: 1}}}
                     viewport={{once: true, amount: 0.3}}
-                    className="left-container lg:w-[50%] max-sm:w-full ma-sm:flex max-sm:justify-items-center"
+                    className="left-container lg:w-[50%] max-sm:w-full max-sm:flex max-sm:justify-center max-lg:justify-items-center"
                 >
                     <img src={Aboutme} alt="About Me Image" className='w-4/5'/>
                 </motion.div>
-                <div className="right-container w-[50%] flex flex-col max-sm:w-full max-sm:mt-10">
+                <div className="right-container w-[50%] flex flex-col max-sm:w-full max-sm:mt-10 max-lg:w-full max-lg:mt-10">
                     <motion.h1
                         initial={{y: -50, opacity: 0}}
                         whileInView={{y: 0, opacity: 1, transition: {duration: 1}}}

@@ -29,7 +29,7 @@ const Skills = () => {
     <section id='skills' className='skills-container w-full mt-10 mb-3'>
         <div className="flex flex-col w-full font-display items-center px-10">
             <motion.h1 initial={{y: -50, opacity: 0}} whileInView={{y: 0, opacity: 1, transition: {duration: 1}}} viewport={{once: true, amount: 0.5}} className='text-4xl'>My <span className='font-bold bg-yellow-300 rounded-md px-2'>Skills</span></motion.h1>
-            <div className="skill-boxes mx-auto mt-15 grid grid-cols-5 gap-18 max-sm:grid-cols-2 max-sm:gap-5 max-lg:grid-cols-4">
+            <div className="skill-boxes mt-15 grid grid-cols-5 place-items-center gap-18 max-sm:grid-cols-2 max-sm:gap-5 max-lg:grid-cols-3 max-lg:gap-10">
                 {skills.map((item,index) => (
                     <motion.div
                     key={index}
