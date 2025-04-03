@@ -74,7 +74,7 @@ const ContactMe = () => {
                         </div>
                         <div className="my-number flex gap-3 items-center">
                             <img src={Phone} alt="Phone Image" className='h-5'/>
-                            <h1>+91 xxxxxxxxxx</h1>
+                            <h1>+91 7383304850</h1>
                         </div>
                     </div>
                 </motion.div>
