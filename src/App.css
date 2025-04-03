@@ -69,3 +69,11 @@
     color: black;
     opacity: 80%;
 }
+
+.box:hover .image-invert {
+    filter: invert(1);
+}
+
+.download-resume:hover .image-invert {
+    filter: invert(1);
+}

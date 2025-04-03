@@ -48,8 +48,8 @@ const ContactMe = () => {
                             <button className='w-1/2 bg-black py-3 rounded-md text-white cursor-pointer'>Get in Touch</button>
                             <div className="connect-boxes flex w-1/2 justify-evenly">
                                 {connect.map((item,index) => (
-                                    <motion.div key={index} className="box h-15 w-15 border flex justify-center items-center rounded-md cursor-pointer max-sm:h-12 max-sm:w-12" whileHover={{scale: 1.05, borderWidth: "3px"}}>
-                                        <a href={item.path} target='_blank'><img src={item.src} alt={item.name} className='h-8'/></a>
+                                    <motion.div key={index} className="box h-15 w-15 border flex justify-center items-center rounded-md cursor-pointer max-sm:h-12 max-sm:w-12" whileHover={{scale: 1.05, borderWidth: "3px", background: "#000000"}}>
+                                        <a href={item.path} target='_blank'><motion.img src={item.src} alt={item.name} className='images h-8 transition duration-500 image-invert'/></a>
                                     </motion.div>
                                 ))}
                             </div>

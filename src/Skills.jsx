@@ -46,7 +46,7 @@ const Skills = () => {
                     }}
                   >
                     {item.src && (
-                      <motion.img src={item.src} alt={`${item.name} Logo`} className='h-15 max-sm:h-12'/>
+                      <motion.img src={item.src} alt={`${item.name} Logo`} className='h-15 max-sm:h-12 transition duration-500 image-invert'/>
                     )}
                     <motion.h1 className='font-bold text-lg max-sm:text-sm'>{item.name}</motion.h1>
                   </motion.div>                  

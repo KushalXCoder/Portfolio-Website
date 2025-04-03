@@ -29,8 +29,8 @@ const Home = () => {
                 <motion.p initial={{y: 100, opacity: 0}} animate={{y: 0, opacity: 1, transition: {duration: 1}}} className='mt-8 text-gray-700 max-sm:mt-5'>Passionate about technology, I specialize in Full Stack Web Development with a strong interest in integrating Generative AI into web applications. I enjoy collaborating with friends and teams to build innovative solutions. Committed to continuous learning, I aim to grow as a developer and contribute to impactful projects in the tech industry.</motion.p>
                 <motion.ul initial={{y: 50, opacity: 0}} animate={{y: 0, opacity: 1, transition: {duration: 1, delay: 0.5}}} className='connect-with-me flex gap-5 mt-14 max-sm:gap-3 max-sm:mt-5 max-lg:mt-8'>
                     {connect.map((item,index) => (
-                        <motion.div key={index} className="box h-15 w-15 border flex justify-center items-center rounded-md cursor-pointer max-sm:h-12 max-sm:w-12" whileHover={{scale: 1.05, borderWidth: "3px"}}>
-                            <a href={item.path} target='_blank'><motion.img src={item.src} alt={item.name} className='images h-8'/></a>
+                        <motion.div key={index} className="box h-15 w-15 border flex justify-center items-center rounded-md cursor-pointer max-sm:h-12 max-sm:w-12" whileHover={{scale: 1.05, borderWidth: "3px", background: "#000000"}}>
+                            <a href={item.path} target='_blank'><motion.img src={item.src} alt={item.name} className='images h-8 transition duration-500 image-invert'/></a>
                         </motion.div>
                     ))}
                 </motion.ul>

@@ -37,8 +37,8 @@ const Navbar = () => {
               initial={{ boxShadow: "6px 6px 0px rgba(0,0,0,1)" }}
               whileHover={{
                 boxShadow: "0px 0px 0px rgba(0,0,0,1)",
-                // backgroundColor: "#000000",
-                // color: "#FFFFFF",
+                backgroundColor: "#000000",
+                color: "#FFFFFF",
                 borderColor: "#000000"
               }}
               onHoverStart={() => setHovered(true)}
@@ -46,7 +46,7 @@ const Navbar = () => {
             >
               <button className='font-display font-medium flex items-center gap-3' disabled>
                 Resume
-                <img src={Download} alt="Download Image" className='h-5'/>
+                <img src={Download} alt="Download Image" className='h-5 transition duration-400 image-invert'/>
               </button>
             </motion.div>
           </div>
