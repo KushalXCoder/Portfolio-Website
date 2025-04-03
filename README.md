@@ -10,8 +10,8 @@ This is my personal portfolio website built using **React.js** and **Tailwind CS
 - **Project Showcase** section to highlight my work
 - **About Me** section detailing my background and skills
 - **Contact Form** for easy communication
+- **Fully Responsive**
 - **Dark/Light Mode Support** (Upcoming Feature)
-- **Fully Responsive** (Work in Progress)
 
 ## Technologies Used
 - **Frontend:** React.js, Tailwind CSS
