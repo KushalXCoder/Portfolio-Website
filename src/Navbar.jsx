@@ -45,7 +45,7 @@ const Navbar = () => {
               onHoverEnd={() => setHovered(false)}
             >
               <button className='font-display font-medium flex items-center gap-3' disabled>
-                Resume
+                <a href="/Resume.pdf" download="Resume">Resume</a>
                 <img src={Download} alt="Download Image" className='h-5 transition duration-400 image-invert'/>
               </button>
             </motion.div>
