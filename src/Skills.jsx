@@ -22,7 +22,7 @@ const Skills = () => {
     {name: "NodeJS", src: NodeJS},
     {name: "MongoDB", src: MongoDB},
     {name: "Express"},
-    {name: "Git & GitHub", src: Git},
+    {name: "GitHub", src: Git},
   ];  
 
   return (
