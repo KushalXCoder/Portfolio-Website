@@ -9,7 +9,7 @@ const Home = () => {
 
   const connect = [
     {name: "LinkedIn", src: Linkedin, path: "https://www.linkedin.com/in/kushal-rathod-90b800297/"},
-    {name: "Gmail", src: Gmail},
+    {name: "Gmail", src: Gmail, path: "mailto:kushalrathod044@gmail.com"},
     {name: "GitHub", src: GitHub, path: "https://github.com/KushalXCoder"}
   ];
 
