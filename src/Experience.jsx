@@ -1,5 +1,6 @@
 import React from 'react';
 import ExperienceBox from './ExperienceBox.jsx';
+import { motion } from "motion/react";
 import ACM from "/ACM.png";
 import Volunteer from "/volunteer.png";
 

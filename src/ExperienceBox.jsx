@@ -1,3 +1,6 @@
+import React from 'react';
+import { motion } from "motion/react";
+
 const ExperienceBox = ({logo, title, text, date}) => {
   return (
     <motion.div
