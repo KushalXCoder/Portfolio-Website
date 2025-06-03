@@ -7,6 +7,7 @@ import ReactJS from "/ReactJS.png";
 import NodeJS from "/NodeJS.png";
 import MongoDB from "/MongoDB.png";
 import Git from "/Git.png";
+import NextJS from "/NextJS.svg";
 import { motion } from "motion/react";
 
 
@@ -17,11 +18,11 @@ const Skills = () => {
     {name: "HTML", src: HTML},
     {name: "CSS", src: CSS},
     {name: "JavaScript", src: JavaScript},
-    {name: "TailwindCSS"},
     {name: "ReactJS", src: ReactJS},
+    {name: "NextJS", src: NextJS},
+    {name: "TailwindCSS"},
     {name: "NodeJS", src: NodeJS},
     {name: "MongoDB", src: MongoDB},
-    {name: "Express"},
     {name: "GitHub", src: Git},
   ];  
 
