@@ -1,9 +1,7 @@
-import React from 'react';
 import Studing from "/Studing.svg";
 import Gmail from "/Gmail.svg";
 import Linkedin from "/Linkedin.svg";
 import GitHub from "/GitHub.svg";
-import { motion } from "motion/react";
 
 const Home = () => {
 

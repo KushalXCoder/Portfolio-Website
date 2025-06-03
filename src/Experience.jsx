@@ -1,12 +1,13 @@
 import React from 'react';
 import ExperienceBox from './ExperienceBox.jsx';
-import { motion } from "motion/react";
 import ACM from "/ACM.png";
 import Volunteer from "/volunteer.png";
 
 const Experience = () => {
     
   const details = [
+    {logo: Volunteer, title: "Tech Intern at Bijoi", text: "Working as a tech intern at Bijoi, where my task is handling and making changes on their website. I have added new components like the About Us page, solved bugs regarding search and corrected the routing bugs. Apart from that, I learned about other aspects of a startup like and helped in brainstorming many ideas.",
+    date: "May 2025 - June 2025"},
     {logo: ACM, title: "Web Dev and Investigation Team - ACM AU", text: "Developing and designing the frontend for ACM AU’s official website as part of the Web Development and Investigation team, contributing to its structure and user experience. Participated as a volunteer from ACM in the GRAINS 2024, conference held at AU and hosted by ACM AU in October 2024. Additionally, conducted a basic web development workshop for ACM members, helping them understand fundamental web technologies.",
     date: "Oct 2024 - Present"},
     {logo: Volunteer, title: "Volunteer at Gyan Prakash", text: "Volunteered at Gyan Prakash NGO in Ahmedabad for a month, teaching Maths and English to students from grades 1 to 8, who come from economically weaker backgrounds. Focused on making learning interactive and engaging by incorporating activities and games. Conducted two informative sessions on environmental protection and pollution, raising awareness among students about sustainability. Also organized playful learning sessions to enhance their understanding of concepts in a fun and effective way.",
